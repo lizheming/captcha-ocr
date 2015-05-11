@@ -6,7 +6,7 @@
 
 做到程序自动识别验证码的第一步是要先创建一个字模库。首先我们来看一下它的验证码有什么特点：
 
-![](http://git.cugbteam.org/lizheming/veritifycodeai/raw/master/example/origin.png)
+![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/origin.png)
 
 可以很明显的发现这是一个由4位颜色不同的数组成的，底色为白色，夹杂混淆杂色块的验证码。然后我们来说一下原理，第一步就是先把混淆色去除掉，然后对其进行切割，人工对大量切割好的验证码进行分类并最终得到字模库。
 
