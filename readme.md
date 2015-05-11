@@ -81,7 +81,7 @@
 
 图片处理后的效果：
 
-![](http://git.cugbteam.org/lizheming/veritifycodeai/raw/master/example/handle.png)
+![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/handle.png)
 
 ### 1.3 切片取模
 
@@ -213,7 +213,7 @@
 
 最终效果预览：
 
-![](http://git.cugbteam.org/lizheming/veritifycodeai/raw/master/example/result.jpg)
+![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/result.jpg)
 
 ## LICENSE  
 MIT, see [LICENSE](https://git.cugbteam.org/lizheming/captcha-ocr/blob/master/LICENSE).
