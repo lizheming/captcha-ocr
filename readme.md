@@ -1,6 +1,6 @@
 ## 网关中心自服务登陆验证码识别
 
-新更新的[网关中心自服务](http://202.204.105.195/services.php)（Srun 3000 3.00rc14.17.5）登陆增加了验证码的支持，这是本方案的初衷。本教程采用PHP(PHP>=5.4)语言编写，根据思路你完全可以使用其他语言编写，欢迎将其他语言版本pull request进本项目。
+新更新的[网关中心自服务](http://202.204.105.195:8800)（Srun 3000 3.00rc14.17.5）登陆增加了验证码的支持，这是本方案的初衷。本教程采用PHP(PHP>=5.4)语言编写，根据思路你完全可以使用其他语言编写，欢迎将其他语言版本pull request进本项目。
 
 ### 1. 建立字模库
 
@@ -141,10 +141,10 @@
 - `$single`:切片后的单个验证码数值
 
 图片处理后的效果：
-![](http://git.cugbteam.org/lizheming/veritifycodeai/raw/master/example/554298580.png)
-![](http://git.cugbteam.org/lizheming/veritifycodeai/raw/master/example/1242362580.png)
-![](http://git.cugbteam.org/lizheming/veritifycodeai/raw/master/example/1990418714.png)
-![](http://git.cugbteam.org/lizheming/veritifycodeai/raw/master/example/217019501.png)
+![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/554298580.png)
+![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/1242362580.png)
+![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/1990418714.png)
+![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/217019501.png)
 ### 1.4 建立字模库
 
 这一步非常简单，重复以上步骤获得大量的基本数据（本代码中附带的库大概是每组数字35个样本得到的）后人工对其进行分类，建立了名称分别为1-9的文件夹存储它们。分类好后我们将图片字符化后与正确数值建立索引关系。字符化简单的来说就是将有颜色的地方标记上得到一个样子的“模型”。至于为什么要字符化稍后我们在验证码识别步骤中解说。
