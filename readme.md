@@ -6,7 +6,7 @@
 
 做到程序自动识别验证码的第一步是要先创建一个字模库。首先我们来看一下它的验证码有什么特点：
 
-![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/origin.png)
+![](http://git.eming.li/lizheming/captcha-ocr/raw/master/example/origin.png)
 
 可以很明显的发现这是一个由4位颜色不同的数组成的，底色为白色，夹杂混淆杂色块的验证码。然后我们来说一下原理，第一步就是先把混淆色去除掉，然后对其进行切割，人工对大量切割好的验证码进行分类并最终得到字模库。
 
@@ -81,7 +81,7 @@
 
 图片处理后的效果：
 
-![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/handle.png)
+![](http://git.eming.li/lizheming/captcha-ocr/raw/master/example/handle.png)
 
 ### 1.3 切片取模
 
@@ -141,10 +141,10 @@
 - `$single`:切片后的单个验证码数值
 
 图片处理后的效果：
-![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/554298580.png)
-![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/1242362580.png)
-![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/1990418714.png)
-![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/217019501.png)
+![](http://git.eming.li/lizheming/captcha-ocr/raw/master/example/554298580.png)
+![](http://git.eming.li/lizheming/captcha-ocr/raw/master/example/1242362580.png)
+![](http://git.eming.li/lizheming/captcha-ocr/raw/master/example/1990418714.png)
+![](http://git.eming.li/lizheming/captcha-ocr/raw/master/example/217019501.png)
 ### 1.4 建立字模库
 
 这一步非常简单，重复以上步骤获得大量的基本数据（本代码中附带的库大概是每组数字35个样本得到的）后人工对其进行分类，建立了名称分别为1-9的文件夹存储它们。分类好后我们将图片字符化后与正确数值建立索引关系。字符化简单的来说就是将有颜色的地方标记上得到一个样子的“模型”。至于为什么要字符化稍后我们在验证码识别步骤中解说。
@@ -213,7 +213,7 @@
 
 最终效果预览：
 
-![](https://git.cugbteam.org/lizheming/captcha-ocr/raw/master/example/result.jpg)
+![](http://git.eming.li/lizheming/captcha-ocr/raw/master/example/result.jpg)
 
 ## LICENSE  
-MIT, see [LICENSE](https://git.cugbteam.org/lizheming/captcha-ocr/blob/master/LICENSE).
+MIT, see [LICENSE](http://git.eming.li/lizheming/captcha-ocr/blob/master/LICENSE).
